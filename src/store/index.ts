@@ -1,10 +1,12 @@
 import { appReducer } from './state';
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
+import { tasksReducer } from './todoState';
 
 const rootReducer = configureStore({
     reducer: {
       app: appReducer,
+      tasks: tasksReducer,
     },
   });
 

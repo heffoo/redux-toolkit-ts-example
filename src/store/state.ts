@@ -15,5 +15,5 @@ export const appReducer = createReducer(initialState, (builder) => {
   })
   .addCase(decrement.type, (state, action: PayloadAction<number>) => {
     state.count -= action.payload;
-  });
+  })
 });
