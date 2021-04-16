@@ -1,3 +1,4 @@
+import { numbersReducer } from './numbersReducer';
 import { appReducer } from './state';
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
@@ -7,6 +8,8 @@ const rootReducer = configureStore({
     reducer: {
       app: appReducer,
       tasks: tasksReducer,
+      numbers: numbersReducer
+      
     },
   });
 

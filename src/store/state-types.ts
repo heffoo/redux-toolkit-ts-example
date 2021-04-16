@@ -3,8 +3,3 @@ export interface TaskType {
     // completed: string;
     id: string;
   }
-
-   export interface AddTodo {
-       title: string;
-       id: string;
-   }
